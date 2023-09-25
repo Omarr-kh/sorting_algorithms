@@ -24,6 +24,7 @@ void _swap(listint_t **head, listint_t **node1, listint_t *node2)
 		(*head) = node2;
 	}
 	(*node1)->prev = node2;
+	*node1 = node2->prev;
 }
 
 /**
